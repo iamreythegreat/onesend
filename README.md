@@ -1,8 +1,6 @@
 # onesend
 Doctrine and Symphony Composer demo
 
-Please decompressed the zip file, 
-
 Usage:
 
 php console.php 
