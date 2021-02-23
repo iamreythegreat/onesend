@@ -1,0 +1,3 @@
+
+A sample program demonstrate a simple workable doctrine and symphony console to work, 
+limited with no error trapping, flows just for display and add of records to DB.
