@@ -1,0 +1,71 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Feb 24, 2021 at 12:14 AM
+-- Server version: 5.7.31
+-- PHP Version: 7.4.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `appointment`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `consultants`
+--
+
+DROP TABLE IF EXISTS `consultants`;
+CREATE TABLE `consultants` (
+  `id` int(3) NOT NULL,
+  `name` varchar(220) NOT NULL,
+  `ttitle` varchar(220) DEFAULT NULL,
+  `availability` varchar(220) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `consultants`
+--
+
+INSERT INTO `consultants` (`id`, `name`, `ttitle`, `availability`) VALUES
+(1, 'Atty, John Batu', 'Real Estate And Intelectual Property ', 'Mon - Fri 9:00am - 5:00pm'),
+(2, 'Atty. Rey Mendoza', 'Family And Community S', 'Mon - Fri 9:00am - 5:00pm'),
+(3, 'James Ingram Santos', 'Notary Public', ' Mon - Fri 9:00am - 5:00pm'),
+(4, 'Peter Burgos Garcia', 'Corporate Taxation', 'Mon - Fri 9:00am - 5:00pm');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `consultants`
+--
+ALTER TABLE `consultants`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `consultants`
+--
+ALTER TABLE `consultants`
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
